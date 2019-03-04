@@ -1,0 +1,18 @@
+img {
+  width: 300px;
+  height: 200px;
+  padding: 1em;
+}
+.italic {
+  font-style: italic;
+}
+.labels {
+  font-weight: bold;
+}
+#content{
+  padding: 1em;
+}
+#article {
+  padding: 1em;
+  border: 1px solid #000000;
+}
