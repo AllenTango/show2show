@@ -1,0 +1,35 @@
+/* 这不解析 */
+.lesson {
+	background-color: #02B3E4;
+	border-radius: 40px;
+	color: white;
+	padding: 10px;
+	margin: 10px auto;
+}
+
+img {
+  width: 100%;
+  display: inline-block;
+}
+
+
+h1 {
+  /*font-size: 40px;*/
+  text-align: center;
+}
+
+h2,p {
+  margin: 20px;
+}
+
+.description {
+	background-color: #00EEEE;
+	padding: 8px;
+	margin: 10px;
+	border-radius: 6px;
+	color: white;
+}
+#slogan {
+	font-size: 40px;
+	font-style: italic;
+}
