@@ -6,3 +6,4 @@
 - 诗词填填看👀 Python2 (Fill In The Blanks)
 - [Python Web 作业1 - 图片墙](https://allentango.github.io/show2show/PythonWeb/homework-1/level1homework.html)
 - 简单爬虫 (爬取GitHub octodex 图片)
+- [Ottergram (更炫酷的图片墙)](https://allentango.github.io/show2show/ottergram/index.html)
