@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#headline {
+  padding: 20px 5%;
+  color: white;
+  font-family: helvetica, sans-serif;
+  box-sizing: content-box;
+  background-image: url("../media/mission-background.jpg");
+  background-color: black;
+  background-size: cover;
+  overflow: auto;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+#headline #blurb {
+  float: left;
+  font-weight: 200;
+  width: 50%;
+  font-size: 18px;
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+
+#headline #register {
+  float: right;
+  font-weight: 300;
+  width: 50%;
+  box-sizing: border-box;
+  background-color: #39b1a4;
+  padding: 20px;
+}
+
+#headline #register label {
+  font-size: 1.2em;
+  font-weight: 200;
+  padding-top: 12px;
+  padding-bottom: 6px;
+  display: block;
+}
+
+#headline #register input {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 200;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#headline #register input[type=submit] {
+  background-color: hsl(8, 70%, 54%);
+  color: white;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+section {
+  clear: both;
+  box-sizing: border-box;
+  padding: 1em;
+}
+
+section h2 {
+  text-align: center;
+}
+
+#section1 ul {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  padding-right: 1em;
+}
+
+#section1 video {
+  width: 50%;
+  float: right;
+}
+
+#images img {
+  width: 30%;
+  margin: 1%;
+  box-sizing: border-box;
+  border-radius: 50% 50%;
+  box-shadow: black 0 0 5px;
+  border: 0.5px solid grey;
+}
+
+@keyframes love {
+  0% {
+    background-color: #ff470f;
+  }
+
+  25% {
+    background-color: #ff3860;
+  }
+
+  50% {
+    background-color: #b86bff;
+  }
+
+  100% {
+    background-color: #3273dc;
+  }
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+footer a {
+  padding: 10px;
+  width: auto;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  animation: love 8s ease-out infinite;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #headline #blurb,
+  #headline #register,
+  #section1 ul,
+  #section1 video,
+  #section2 img,
+  #section3 img {
+    width: 100%;
+  }
+}
