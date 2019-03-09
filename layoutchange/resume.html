@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>我的简历</title>
+    <link rel="stylesheet" href="style1.css" id="changeCSS">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>简历</h1>
+        </div>
+        <div class="main">
+            <div class="mtable">
+                <div class="left">
+                    <h2>基本信息</h2></div>
+                <div class="right">
+                    <table id="t01">
+                        <tr>
+                            <th>姓名</th>
+                            <td>张三</td>
+                            <th>性别</th>
+                            <td>男</td>
+                            <th>应聘职位</th>
+                            <td>Web前端工程师</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="mtable">
+                <div class="left">
+                    <h2>联系方式</h2></div>
+                <div class="right">
+                    <table id="t02">
+                        <tr>
+                            <th>手机</th>
+                            <td>12312341234</td>
+                            <th>Email</th>
+                            <td>
+                                <a href="mailto:allentango@163.com">allentango@163.com</a>
+                            </td>
+                            <th>个人主页</th>
+                            <td>
+                                <a href="https://github.com/allentango">GitHub</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="mtable">
+                <div class="left">
+                    <h2>能力描述</h2></div>
+                <div class="right">
+                    <table id="t03">
+                        <tr>
+                            <th>技术能力</th>
+                        </tr>
+                        <tr>
+                            <td class="td01">熟练掌握HTML,CSS,JavaScript</td>
+                        </tr>
+                        <tr>
+                            <th>综合能力</th>
+                        </tr>
+                        <tr>
+                            <td>良好的沟通，主动积极，努力勤奋</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="mtable">
+                <div class="left">
+                    <h2>教育经历</h2></div>
+                <div class="right">
+                    <table id="t04">
+                        <tr>
+                            <th>本科</th>
+                        </tr>
+                        <tr>
+                            <td class="td01">百度前端技术学院小薇学院</td>
+                        </tr>
+                        <tr>
+                            <th>研究生</th>
+                        </tr>
+                        <tr>
+                            <td>百度前端技术学院大斌学院</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="mtable">
+                <div class="left">
+                    <h2>项目经历</h2></div>
+                <div class="right">
+                    <table id="t05">
+                        <tr>
+                            <th>小度小度</th>
+                        </tr>
+                        <tr>
+                            <td class="td01">作为前端工程师角色参与了ABC组件的开发</td>
+                        </tr>
+                        <tr>
+                            <th>SAN Doc</th>
+                        </tr>
+                        <tr>
+                            <td>作为文档工程师参与了SAN Doc编写</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h2>ChangeCSS 👇👇👇</h2>
+        <div class="change">
+            <button type="button" id="style1" name="button">模版1</button>
+            <button type="button" id="style2" name="button">模版2</button>
+            <button type="button" id="style3" name="button">模版3</button>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript">
+    document.getElementById("style1").addEventListener("click", function() {
+        changeStyle("style1.css");
+    });
+    document.getElementById("style2").addEventListener("click", function() {
+        changeStyle("style2.css");
+    });
+    document.getElementById("style3").addEventListener("click", function() {
+        changeStyle("style3.css");
+    });
+
+    function changeStyle(demo) {
+        var obj = document.getElementById("changeCSS");
+        obj.setAttribute("href", demo);
+    }
+</script>
+
+</html>

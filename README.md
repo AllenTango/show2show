@@ -4,6 +4,7 @@
 - [Python2 生成页面 '视频源: Google & YouTube'](https://allentango.github.io/show2show/movie-website/index.html)
 - [我家狗狗介绍 无屏幕响应](https://allentango.github.io/show2show/fend-animal-trading-cards-master/card.html)
 - [multi screen CS256 (根据优设中文版写)](https://allentango.github.io/show2show/multi-screen-site/index.html)
+- [Style Change js简单实现](https://allentango.github.io/show2show/layoutchange/resume.html)
 - 诗词填填看👀 Python2 (Fill In The Blanks)
 - [Python Web 作业1 - 图片墙](https://allentango.github.io/show2show/PythonWeb/homework-1/level1homework.html)
 - 简单爬虫 (爬取GitHub octodex 图片)
