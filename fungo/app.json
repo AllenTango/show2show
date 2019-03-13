@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/about/about",
+    "pages/person/person",
+    "pages/create/create",
+    "pages/welldone/welldone"
+  ],
+  "tabBar": {
+    "color": "#00BFFF",
+    "selectedColor": "#00BFFF",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icons/growth.png",
+        "selectedIconPath": "images/icons/growth_selected.png",
+        "text": "逗糖"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "iconPath": "images/icons/person.png",
+        "selectedIconPath": "images/icons/person_selected.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "逗糖",
+    "navigationBarBackgroundColor": "#00BFFF",
+    "backgroundColor": "#00BFFF"
+  }
+}

@@ -1,0 +1,22 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">逗糖</view>
+        <view class="page__desc">逗糖，是一款ToDo & Keep 工具，用来记录成长。嗯，成长是有趣的、甜蜜的。</view>
+        <view class="page__desc">Style Base on WeUI</view>
+    </view>
+    <view class="page__bd">
+    <view class="weui-cells__title">About Me</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">微信:</view>
+                <view class="weui-cell__ft">O_0ver</view>
+            </view>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">GitHub:</view>
+                <view class="weui-cell__ft">https://github.com/AllenTango</view>
+            </view>
+        </view>
+    </view>
+</view>

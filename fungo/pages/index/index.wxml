@@ -1,0 +1,19 @@
+<view class="page">
+  <view class="page__bd page__bd_spacing">
+    <view class="kind-list">
+      <block wx:for="{{list}}" wx:key="id">
+        <view class="kind-list__item">
+          <view id="{{item.id}}" class="weui-flex kind-list__item-hd">
+            <view class="weui-flex__item" bindtouchstart="touchstart" bindtouchmove="touchmove" data-index="{{index}}">{{item.name}}</view>
+            <image class="kind-list__img" src="/images/icons/icon_nav_form.png"></image>
+          </view>
+          <view class="{{item.isTouchMove ? 'showItem' : 'hiddenItem'}}" data-index="index">
+            <view wx:if="{{item.flag}}" class="done">标记已完成</view>
+            <view wx:else class="not">标记未完成</view>
+            <view class="delItem" catchtap="del">删除</view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
