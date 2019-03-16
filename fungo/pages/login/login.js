@@ -21,6 +21,9 @@ Page({
             }
           })
         }
+      },
+      fail: err => {
+        console.log(err)
       }
     })
   },

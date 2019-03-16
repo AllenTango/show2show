@@ -3,15 +3,23 @@
     <view class="kind-list">
       <block wx:for="{{list}}" wx:key="id">
         <view class="kind-list__item">
-          <view id="{{item.id}}" class="weui-flex kind-list__item-hd">
-            <view class="weui-flex__item" bindtouchstart="touchstart" bindtouchmove="touchmove" data-index="{{index}}">{{item.name}}</view>
-            <image class="kind-list__img" src="/images/icons/icon_nav_form.png"></image>
-          </view>
-          <view class="{{item.isTouchMove ? 'showItem' : 'hiddenItem'}}" data-index="index">
-            <view wx:if="{{item.flag}}" class="done">标记已完成</view>
-            <view wx:else class="not">标记未完成</view>
-            <view class="delItem" catchtap="del">删除</view>
-          </view>
+          <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+            <view class="scroll-view-item_H item">
+              <view id="{{item.id}}" class="weui-flex kind-list__item-hd">
+                <view class="weui-flex__item">{{item.name}}</view>
+                <image class="kind-list__img" src="/images/icons/icon_nav_form.png"></image>
+              </view>
+            </view>
+            <view class="scroll-view-item_H">
+              <view class="markItem" data-index="index">
+                <view wx:if="{{item.flag}}" class="done">标记已完成</view>
+                <view wx:else class="not">标记未完成</view>
+              </view>
+            </view>
+            <view class="scroll-view-item_H">
+              <view class="delItem" catchtap="del">删除</view>
+            </view>
+          </scroll-view>
         </view>
       </block>
     </view>

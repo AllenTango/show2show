@@ -29,26 +29,29 @@ Page({
       }
     ]
   },
-  touchstart: function (e) {
-    startX = e.touches[0].pageX; 
-  },
-  touchmove: function(e) {
-    let index = e.currentTarget.dataset.index
-    endX = e.touches[0].pageX
-    this.data.list.forEach(function(v, i) {
-      v.isTouchMove = false
-      if (i === index) {
-        if (startX > endX) {
-          v.isTouchMove = true
+  // 事件处理
+  onLoad: function () {
+    // 查看是否授权
+    wx.getSetting({
+      success: res => {
+        if (res.authSetting['scope.userInfo']) {
+          wx.getUserInfo({
+            success: res => {
+              // 已授权处理
+              wx.login({
+                success: res => {
+                  //console.log(res.code);
+                }
+              });
+            }
+          })
         } else {
-          v.isTouchMove = false
+          wx.redirectTo({
+            url: '../login/login',
+          })
         }
       }
     })
-    this.setData({
-      list: this.data.list
-    })
-    console.log(e)
   },
   del: function(e) {
     wx.showModal({
