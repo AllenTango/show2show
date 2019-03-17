@@ -1,5 +1,4 @@
 const app = getApp();
-let startX, endX;
 
 Page({
   data: {
@@ -7,30 +6,30 @@ Page({
         id: 'form',
         name: '表单',
         flag: true,
-        isTouchMove: false
+        index: 0
       },
       {
         id: 'widget',
         name: '基础组件',
         flag: false,
-        isTouchMove: false
+        index: 1
       },
       {
         id: 'feedback',
         name: '操作反馈',
         flag: false,
-        isTouchMove: false
+        index: 2
       },
       {
         id: 'nav',
         name: '导航相关',
         flag: true,
-        isTouchMove: false
+        index: 3
       }
     ]
   },
   // 事件处理
-  onLoad: function () {
+  onLoad: function() {
     // 查看是否授权
     wx.getSetting({
       success: res => {
@@ -53,17 +52,37 @@ Page({
       }
     })
   },
+  upper(e) {
+    console.log(e)
+  },
+  lower(e) {
+    console.log(e)
+  },
+  scroll(e) {
+    console.log(e)
+  },
+ 
+  mark: function(e) {
+    let index = e.currentTarget.dataset.index
+    // console.log(index)
+    let flag = "list[" + index + "].flag"
+    this.setData({
+      [flag]: !e.currentTarget.dataset.flag
+    })
+  },
   del: function(e) {
+    let that = this;
     wx.showModal({
       title: '提示！',
       content: '确认删除此任务么？',
       success: function(res) {
         if (res.confirm) {
-          console.log('用户点击确定')
-          let listItem = this.data.list[e.currentTarget.dataset.index]
-          this.data.list.splice(e.currentTarget.dataset.index, 1)
-          this.setData({
-            list: this.data.list
+          // console.log('用户点击确定')
+          // let listItem = that.data.list[e.currentTarget.dataset.index]
+          // console.log('用户删除了:'+ listItem)
+          that.data.list.splice(e.currentTarget.dataset.index, 1)
+          that.setData({
+            list: that.data.list
           })
         } else if (res.cancel) {
           console.log('用户点击取消')

@@ -29,7 +29,7 @@ App({
           })
         } else {
           wx.reLaunch({
-            url: '../login/login',
+            url: '../pages/login/login',
           })
         }
       }
@@ -38,5 +38,4 @@ App({
   globalData: {
     userInfo: null
   }
-  // touch: new touch()
 })

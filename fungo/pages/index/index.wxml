@@ -11,13 +11,13 @@
               </view>
             </view>
             <view class="scroll-view-item_H">
-              <view class="markItem" data-index="index">
-                <view wx:if="{{item.flag}}" class="done">标记已完成</view>
-                <view wx:else class="not">标记未完成</view>
+              <view class="markItem" bindtap="mark" data-flag="{{item.flag}}" data-index="{{index}}">
+                <view wx:if="{{item.flag}}">标记已完成</view>
+                <view wx:else>标记未完成</view>
               </view>
             </view>
             <view class="scroll-view-item_H">
-              <view class="delItem" catchtap="del">删除</view>
+              <view class="delItem" catchtap="del" data-index="{{index}}">删除</view>
             </view>
           </scroll-view>
         </view>

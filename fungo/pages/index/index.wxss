@@ -33,6 +33,10 @@
   width: 100%;
 }
 
+/* .done {
+  background-color: gainsboro;
+} */
+
 .markItem {
   width: 200rpx;
   background-color: deepskyblue;

@@ -7,7 +7,7 @@
           <view class="weui-label">任务名称</view>
         </view>
         <view class="weui-cell__bd">
-          <input class="weui-input" placeholder="Let's Do it!" />
+          <input class="weui-input" placeholder="Let's Do it!" confirm-type="next"/>
         </view>
       </view>
       <view class="weui-cell weui-cell_input">
@@ -15,7 +15,7 @@
           <view class="weui-label">任务介绍</view>
         </view>
         <view class="weui-cell__bd">
-          <textarea class="weui-textarea" style="height: 3.3em;padding: 25rpx 0;" />
+          <textarea class="weui-textarea" style="height: 3.3em;padding: 25rpx 0;"  confirm-type="next"/>
           <!-- <view class="weui-textarea-counter">0/200</view> -->
         </view>
       </view>
@@ -28,7 +28,7 @@
           <view class="weui-label">任务目标</view>
         </view>
         <view class="weui-cell__bd">
-          <input class="weui-input" placeholder="100 天！" />
+          <input class="weui-input" placeholder="100 天！" type="number"  confirm-type="next" />
         </view>
       </view>
       <view class="weui-cell weui-cell_input">
