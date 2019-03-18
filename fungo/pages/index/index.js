@@ -9,19 +9,19 @@ Page({
         index: 0
       },
       {
-        name: '基础组件',
+        name: '点击展示详情页/编辑',
         flag: false,
         count: 3,
         index: 1
       },
       {
-        name: '操作反馈',
+        name: '提示完成次数 👉 ',
         flag: false,
         count: 5,
         index: 2
       },
       {
-        name: '导航相关',
+        name: '向左 👈 滑动标记完成/未完成|删除',
         flag: true,
         count: 7,
         index: 3
