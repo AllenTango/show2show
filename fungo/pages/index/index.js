@@ -65,7 +65,8 @@ Page({
   mark: function(e) {
     let index = e.currentTarget.dataset.index
     // console.log(index)
-    let flag = "list[" + index + "].flag"
+    // let flag = "list[" + index + "].flag"
+    let flag = `list[${index}].flag`
     this.setData({
       [flag]: !e.currentTarget.dataset.flag
     })
