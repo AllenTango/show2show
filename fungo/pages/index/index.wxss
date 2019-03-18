@@ -9,6 +9,10 @@
   overflow: hidden;
 }
 
+.weui-badge {
+  background-color: deepskyblue;
+}
+
 .kind-list__item-hd {
   padding: 10px;
   -webkit-transition: opacity 0.3s;

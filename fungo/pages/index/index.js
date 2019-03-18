@@ -3,27 +3,27 @@ const app = getApp();
 Page({
   data: {
     list: [{
-        id: 'form',
         name: '表单',
         flag: true,
+        count: 1,
         index: 0
       },
       {
-        id: 'widget',
         name: '基础组件',
         flag: false,
+        count: 3,
         index: 1
       },
       {
-        id: 'feedback',
         name: '操作反馈',
         flag: false,
+        count: 5,
         index: 2
       },
       {
-        id: 'nav',
         name: '导航相关',
         flag: true,
+        count: 7,
         index: 3
       }
     ]
@@ -65,6 +65,8 @@ Page({
   mark: function(e) {
     let index = e.currentTarget.dataset.index
     let flag = `list[${index}].flag`
+    // let count = `list[${index}].count`
+    // if (flag) e.currentTarget.dataset.count++
     this.setData({
       [flag]: !e.currentTarget.dataset.flag
     })
