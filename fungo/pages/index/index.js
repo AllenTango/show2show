@@ -64,8 +64,6 @@ Page({
  
   mark: function(e) {
     let index = e.currentTarget.dataset.index
-    // console.log(index)
-    // let flag = "list[" + index + "].flag"
     let flag = `list[${index}].flag`
     this.setData({
       [flag]: !e.currentTarget.dataset.flag
@@ -78,9 +76,6 @@ Page({
       content: '确认删除此任务么？',
       success: function(res) {
         if (res.confirm) {
-          // console.log('用户点击确定')
-          // let listItem = that.data.list[e.currentTarget.dataset.index]
-          // console.log('用户删除了:'+ listItem)
           that.data.list.splice(e.currentTarget.dataset.index, 1)
           that.setData({
             list: that.data.list
