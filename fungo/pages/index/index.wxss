@@ -29,7 +29,7 @@
   /* height: 90rpx; */
 }
 
-.item {
+.scroll-view-item_H:first-child {
   width: 100%;
 }
 

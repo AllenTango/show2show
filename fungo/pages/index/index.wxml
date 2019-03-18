@@ -4,7 +4,7 @@
       <block wx:for="{{list}}" wx:key="id">
         <view class="kind-list__item">
           <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
-            <view class="scroll-view-item_H item">
+            <view class="scroll-view-item_H" style="background-color:{{item.flag ? 'gainsboro' : 'white'}}">
               <view id="{{item.id}}" class="weui-flex kind-list__item-hd">
                 <view class="weui-flex__item">{{item.name}}</view>
                 <image class="kind-list__img" src="/images/icons/icon_nav_form.png"></image>
