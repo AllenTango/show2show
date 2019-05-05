@@ -5,7 +5,7 @@
     "pages/about/about",
     "pages/person/person",
     "pages/create/create",
-    "pages/welldone/welldone"
+    "pages/detail/detail"
   ],
   "tabBar": {
     "color": "#00BFFF",
@@ -32,5 +32,6 @@
     "navigationBarTitleText": "逗糖",
     "navigationBarBackgroundColor": "#00BFFF",
     "backgroundColor": "#00BFFF"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

@@ -1,0 +1,10 @@
+.addTask {
+  padding: 20rpx 30rpx;
+  position: relative;
+}
+.addTask image {
+  position: absolute;
+  left: 40rpx;
+  width: 46rpx;
+  height: 46rpx;
+}

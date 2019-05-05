@@ -8,10 +8,10 @@
   </view>
   <view class="page__bd">
     <view class="weui-cells">
-      <navigator url="../create/create" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <!-- <navigator url="../create/create" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
         <view class="weui-cell__bd">创建任务</view>
         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-      </navigator>
+      </navigator> -->
       <navigator url="../about/about" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
         <view class="weui-cell__bd">关于逗糖</view>
         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
