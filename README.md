@@ -10,4 +10,4 @@
 - 简单爬虫 (爬取GitHub octodex 图片)
 - [Ottergram (更炫酷的图片墙)](https://allentango.github.io/show2show/ottergram/index.html)
 - [初试小程序 dev](https://github.com/AllenTango/show2show/tree/master/fungo)
-- [简单 WebComponent 实现todoApp](https://allentango.github.io/show2show/tree/master/todo-app/native)
+- [简单 WebComponent 实现todoApp](https://allentango.github.io/show2show/tree/master/native-todo-app/index.html)
