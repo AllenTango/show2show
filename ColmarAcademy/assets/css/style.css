@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+header {
+  height: 64px;
+  padding: 16px 24px;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+}
+
+nav.desktop span a {
+  color: #000;
+  text-decoration: none;
+}
+
+main>h2 {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none !important;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  header {
+    position: relative;
+  }
+
+  header>span {
+    position: absolute;
+    left: 56px;
+    font-size: 32px;
+    margin-left: 0;
+  }
+
+  span+span {
+    margin-left: 16px;
+  }
+
+  main>h2 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .articles+h2 {
+    background-color: rgb(231, 232, 233);
+  }
+
+  .course p,
+  .course span {
+    opacity: .5;
+  }
+
+  footer {
+    padding: 16px 24px;
+    border-top: 2px solid #eee;
+  }
+
+  .recommend .media-item,
+  .recommend .text-item {
+    width: 50%;
+  }
+
+  .recommend,
+  .articles,
+  .exhibit {
+    padding: 32px 24px;
+  }
+
+  .recommend {
+    background-color: rgb(211, 210, 211);
+  }
+
+  .courses {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: rgb(231, 232, 233);
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .articles,
+  .exhibit {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .morecase .item:hover,
+  .course:hover {
+    background-color: rgb(241, 243, 244);
+  }
+
+  .recommend .text-item {
+    box-sizing: border-box;
+    padding-left: 24px;
+    padding-top: inherit;
+  }
+
+  .recommend .text-item p {
+    margin: 32px auto;
+  }
+
+  .recommend .text-item button {
+    width: 60%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #fff;
+    background-color: #000;
+    border: 0px;
+    border-radius: 5px;
+  }
+
+  .recommend img,
+  .showcase img,
+  .showcase video,
+  .morecase img {
+    width: 100%;
+  }
+
+  .showcase {
+    width: 60%;
+    padding-right: 24px;
+    box-sizing: border-box;
+  }
+
+  .showcase .text-item h2 {
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+
+  .showcase .text-item span {
+    margin-top: 32px;
+    display: block;
+  }
+
+  .exhibit .showcase .text-item h3 {
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+
+  .morecase {
+    width: 40%;
+  }
+
+  .morecase .media-item {
+    width: 35%;
+    box-sizing: border-box;
+    padding: 16px;
+  }
+
+  .morecase .media-item:first-child {
+    padding-top: 0;
+  }
+
+  .morecase .text-item {
+    width: 65%;
+    padding-top: 5px;
+  }
+
+  .morecase .text-item h3 {
+    margin: 8px auto;
+  }
+
+  .morecase .text-item p:first-child {
+    margin-bottom: 8px;
+  }
+
+  .course {
+    box-sizing: border-box;
+    margin-top: 32px;
+    margin-right: 32px;
+    background-color: rgb(255, 255, 255);
+    max-width: min-content;
+  }
+
+  .course .text-item {
+    padding-left: 16px;
+    padding-bottom: 24px;
+  }
+
+  .course .text-item h3 {
+    margin: 16px auto;
+  }
+
+  .course .text-item span {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  main>h2 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    width: 70%;
+  }
+
+  header.flex-container,
+  nav.flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .media-item,
+  .media-item img {
+    width: 100%;
+  }
+
+  .recommend .text-item {
+    background-color: rgb(211, 212, 213);
+    padding: 32px 16px;
+  }
+
+  .recommend .text-item p {
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+
+  .recommend .text-item button {
+    width: 100%;
+    padding: 16px;
+    background-color: rgb(144, 144, 144);
+    color: #fff;
+    border: 0px;
+  }
+
+  .articles {
+    padding: 16px;
+  }
+
+  .articles .text-item {
+    padding: 16px 16px 64px 16px;
+  }
+
+  div.articles+h2 {
+    margin-top: 0px;
+  }
+
+  .course {
+    box-sizing: border-box;
+    padding: 16px 16px 24px 16px;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color: rgb(211, 210, 211);
+  }
+
+  .course h3 {
+    text-align: left;
+  }
+
+  video {
+    width: 100%;
+  }
+
+  footer {
+    margin-top: 24px;
+    padding: 16px;
+  }
+}
