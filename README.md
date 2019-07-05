@@ -29,4 +29,4 @@
 
 <hr/>
 
-- [轮播图插件](https://allentango.github.io/show2show/slider/index.html)
+- [轮播图插件](https://allentango.github.io/show2show/slider/)
