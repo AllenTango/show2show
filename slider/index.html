@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>js实现轮播图</title>
+  <style>
+    body {
+      background-color: darkorange;
+    }
+
+    #slider-container {
+      margin: 0 auto;
+      width: 500px;
+      height: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="slider-container">
+  </div>
+  <script src="js/slider.js"></script>
+  <script>
+    const imgsContainer = document.querySelector('#slider-container');
+    const imgUrls = [{
+        imgUrl: './img/show0.jpg',
+        link: 'https://allentango.github.io'
+      }, {
+        imgUrl: './img/show1.jpg',
+        link: 'https://allentango.github.io'
+      }, {
+        imgUrl: './img/show2.jpg',
+        link: 'https://allentango.github.io'
+      }, {
+        imgUrl: './img/show3.jpg'
+      },
+      {
+        imgUrl: './img/show4.jpg',
+        link: 'https://allentango.github.io'
+      }
+    ];
+
+    createSlider(imgsContainer, imgUrls, 2000);
+  </script>
+</body>
+
+</html>
