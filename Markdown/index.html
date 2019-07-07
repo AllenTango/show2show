@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Markdown 笔记本</title>
+  <!-- 使用Google Material 样式 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="style.css">
+  <!-- 加载Vue，以及Marked第三方库 -->
+  <script src="https://unpkg.com/vue/dist/vue.js" charset="utf-8"></script>
+  <script src="https://unpkg.com/marked" charset="utf-8"></script>
+  <script src="https://unpkg.com/moment" charset="utf-8"></script>
+</head>
+
+<body>
+
+  <!-- 笔记本应用 -->
+  <div id="notebook">
+
+    <!-- 笔记列表 -->
+    <aside class="side-bar">
+      <!-- 工具栏 -->
+      <div class="toolbar">
+        <!-- 添加笔记按钮 -->
+        <button @click="addNote"><i class="material-icons"></i>添加笔记</button>
+      </div>
+      <!-- 笔记列表展示 -->
+      <div class="notes">
+        <div class="note" v-for="note in sortedNotes" @click="selectNote(note)" :class="{selected: note === selectedNote}">
+          {{note.title}}
+          <i class="icon material-icons" v-if="note.favorite">star</i>
+        </div>
+      </div>
+    </aside>
+    <template v-if="selectedNote">
+      <!-- 主面板 -->
+      <section class="main">
+        <!-- 笔记工具栏 -->
+        <div class="toolbar">
+          <input type="text" v-model="selectedNote.title">
+          <button @click="favoriteNote" title="收藏"><i class="material-icons">{{selectedNote.favorite ? 'star' : 'star_border'}}</i></button>
+          <button type="button" @click="removeNote" title="删除"><i class="material-icons">delete</i></button>
+        </div>
+        <textarea v-model="selectedNote.content"></textarea>
+        <div class="toolbar status-bar">
+          <!-- 状态栏 -->
+          <span class="date">
+            <span class="label">创建时间</span>
+            <span class="value">{{selectedNote.created | date}}</span>
+          </span>
+          <span class="lines">
+            <span class="label">行数：</span>
+            <span class="value">{{linesCount}}</span>
+          </span>
+          <span class="words">
+            <span class="label">字数</span>
+            <span class="value">{{wordsCount}}</span>
+          </span>
+          <span class="characters">
+            <span class="label">字节：</span>
+            <span class="value">{{charactersCount}}</span>
+          </span>
+        </div>
+      </section>
+
+      <!-- 预览面板 v-html 慎用 -->
+      <aside class="preview" v-html="notePreview"></aside>
+    </template>
+
+
+  </div>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>

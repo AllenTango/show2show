@@ -25,8 +25,9 @@
 - [PianoKeys](https://allentango.github.io/show2show/PianoKeys/index.html)
 - [Musicon 初了解 handlebars 模版语言](https://allentango.github.io/show2show/Musicon/index.html)
 - [word smith (利用 API 实现get 请求) Helper函数少少看得懂](https://allentango.github.io/show2show/WordSmith/index.html)
-- [Wanderlust 利用async fetch 实现异步请求](https://allentango.github.io/show2show/Wanderlust/index.html)
+- [Wanderlust 利用async fetch 实现请求](https://allentango.github.io/show2show/Wanderlust/index.html)
 
 <hr/>
 
 - [轮播图插件](https://allentango.github.io/show2show/slider/)
+- [Markdown Notes vue双向绑定实现数据同步 利用localStorage保存记录](https://allentango.github.io/show2show/Markdown/index.html)
