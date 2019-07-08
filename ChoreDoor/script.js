@@ -3,7 +3,7 @@ let doorImage2 = document.getElementById('door2');
 let doorImage3 = document.getElementById('door3');
 let startButton = document.getElementById('start');
 let currentlyPlaying = true;
-// 再次加载 路径是需要绝对路径么？ 2019-06-05
+// 再次加载 路径是需要绝对路径么？ 2019-06-05 同源策略
 let closedDoorPath = 'https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg';
 let botDoorPath = 'https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/robot.svg';
 let beachDoorPath = 'https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/beach.svg';
@@ -44,7 +44,7 @@ const playDoor = door => {
   numClosedDoors--;
   if (numClosedDoors === 0) {
     gameOver('win');
-  } else if (isBot(door)){
+  } else if (isBot(door)) {
     gameOver('lose');
     currentlyPlaying = false;
   }
