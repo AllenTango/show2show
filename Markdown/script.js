@@ -73,7 +73,7 @@ new Vue({
       this.selectedId = note.id
     },
     favoriteNote() {
-      this.selectedNote.favorite = true
+      this.selectedNote.favorite ^= true
     },
     removeNote() {
       // && confirm('删除这条笔记') 条件删除
