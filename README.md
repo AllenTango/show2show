@@ -9,7 +9,7 @@
 - [Python Web 作业1 - 图片墙](https://allentango.github.io/show2show/PythonWeb/homework-1/level1homework.html)
 - 简单爬虫 (爬取GitHub octodex 图片)
 - [Ottergram (更炫酷的图片墙)](https://allentango.github.io/show2show/ottergram/index.html)
-- [初试小程序 dev](https://github.com/AllenTango/show2show/fungo)
+- 初试小程序 dev
 - [TodoApp 初了解 Web组件 shadowDOM](https://allentango.github.io/show2show/TodoApp/index.html)
 
 ### CodeCademy 作业展示
@@ -32,4 +32,4 @@
 - [轮播图插件](https://allentango.github.io/show2show/slider/)
 - [Markdown Notes vue双向绑定实现数据同步 利用localStorage保存记录](https://allentango.github.io/show2show/Markdown/index.html)
 - [我的在线简历](https://allentango.github.io/show2show/bio/index.html)
-- [readhub 上爬取的数据](https://github.com/AllenTango/show2show/readhub_datas)
+- readhub 上爬取的数据
