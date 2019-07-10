@@ -32,3 +32,4 @@
 - [轮播图插件](https://allentango.github.io/show2show/slider/)
 - [Markdown Notes vue双向绑定实现数据同步 利用localStorage保存记录](https://allentango.github.io/show2show/Markdown/index.html)
 - [我的在线简历](https://allentango.github.io/show2show/bio/index.html)
+- [readhub 上爬取的数据](https://github.com/AllenTango/show2show/readhub_datas)

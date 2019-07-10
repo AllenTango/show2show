@@ -3,16 +3,23 @@ img {
   height: 200px;
   padding: 1em;
 }
+
 .italic {
   font-style: italic;
 }
+
 .labels {
   font-weight: bold;
 }
-#content{
+
+#content {
+  width: 320px;
   padding: 1em;
+  border: 2px solid blanchedalmond;
+  box-shadow: 5px 5px 10px 2px goldenrod;
 }
+
 #article {
   padding: 1em;
-  border: 1px solid #000000;
+  border: 1px solid blanchedalmond;
 }
